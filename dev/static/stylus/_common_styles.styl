@@ -7,6 +7,19 @@
   margin-right 15px
   border 2px solid #fff
   border-radius 50px
+  cursor pointer
+
+  &.active
+    .sandwich-line--top
+      top 21px
+      transform rotate(45deg)
+
+    .sandwich-line--middle
+      opacity 0
+
+    .sandwich-line--bottom
+      top 21px
+      transform rotate(-45deg)
 
 .sandwich-line
   position absolute
@@ -16,12 +29,14 @@
   height 4px
   width 25px
   background-color #fff
+  transition all linear .3s
 
 .sandwich-line--top
   top 13px
 
 .sandwich-line--middle
   top 21px
+  opacity 1
 
 .sandwich-line--bottom
   top 29px
@@ -41,3 +56,30 @@
   &:hover
     background-color #fff
     color mainColor
+
+.g-section-title
+  margin-bottom 30px
+  font-size 42px
+  text-align center
+  color mainColor
+  font-family titleFont
+
+  &.g-section-title--white
+    color #fff
+
+.instagram-text
+  font-size 24px
+  font-family boldFont
+  position relative
+  display inline-block
+
+  color mainColor
+
+  &:before
+    display inline-block
+    vertical-align middle
+    margin-right 15px
+    width 35px
+    height 35px
+    content ''
+    background url("../img/svg/instagram.svg") 0 0 no-repeat

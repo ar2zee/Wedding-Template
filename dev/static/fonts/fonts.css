@@ -30,12 +30,12 @@
 
   @font-face {
       font-family: 'Kurale-Regular';
-      src: url('../fonts/Kurale-Regular.eot'); /* IE9 Compat Modes */
-      src: url('../fonts/Kurale-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('../fonts/Kurale-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-      url('../fonts/Kurale-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-      url('../fonts/Kurale-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-      url('../fonts/Kurale-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+      src: url('../fonts/Kurale-Regular/Kurale-Regular.eot'); /* IE9 Compat Modes */
+      src: url('../fonts/Kurale-Regular/Kurale-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../fonts/Kurale-Regular/Kurale-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../fonts/Kurale-Regular/Kurale-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../fonts/Kurale-Regular/Kurale-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../fonts/Kurale-Regular/Kurale-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
       font-style: normal;
  			font-weight: normal;
 }

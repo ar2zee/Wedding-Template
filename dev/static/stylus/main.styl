@@ -15,7 +15,7 @@ html
   font-size 18px
 
 body
-  font-family mainFont
+  // font-family mainFont
 
 h1,h2,h3,h4,h5,h6
   margin 0
@@ -45,7 +45,7 @@ textarea
 
 section
   position relative
-  margin-bottom 20px
+  padding 70px 0
 
 input,
 select,
@@ -54,12 +54,6 @@ button
 
 *, *:before, *:after
   box-sizing border-box
-
-.hide
-  display none
-
-.show
-  display block
 
 ::-moz-selection
   background: #b3d4fc;
@@ -105,3 +99,12 @@ button
 
 // Стили медиазапросов
 @import '_media.styl'
+
+// Стили Main Bunner
+@import 'sections/_banner.styl'
+
+ // Стили About
+ @import 'sections/_about.styl'
+
+ // Стили About
+ @import 'sections/_services.styl'
