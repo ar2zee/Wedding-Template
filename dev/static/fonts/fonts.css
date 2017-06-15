@@ -37,5 +37,5 @@
       url('../fonts/Kurale-Regular/Kurale-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
       url('../fonts/Kurale-Regular/Kurale-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
       font-style: normal;
- 			font-weight: normal;
+      font-weight: normal;
 }
