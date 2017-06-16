@@ -2994,11 +2994,11 @@ button {
 }
 .g-btn {
   display: inline-block;
-  padding: 0 20px;
-  height: 30px;
-  line-height: 28px;
+  padding: 0 30px;
+  height: 50px;
+  line-height: 48px;
   border: 1px solid #fff;
-  border-radius: 20px;
+  border-radius: 30px;
   color: #fff;
   cursor: pointer;
   background-color: #007558;
@@ -3007,6 +3007,12 @@ button {
 .g-btn:hover {
   background-color: #fff;
   color: #007558;
+}
+.g-btn.g-btn--small {
+  height: 30px;
+  height: 28px;
+  padding: 0 20px;
+  border-radius: 20px;
 }
 .g-section-title {
   margin-bottom: 30px;
@@ -3170,6 +3176,7 @@ header .container {
 }
 .portfolio {
   background: url("../img/general/portfolio-bg.jpg") 0 0 no-repeat;
+  height: 1160px;
 }
 .portfolio:before {
   content: '';
@@ -3180,11 +3187,30 @@ header .container {
   right: 0;
   height: 21px;
   background: url("../img/general/wave-top-portfolio.png") 0 0 no-repeat;
+  z-index: 1;
+}
+.portfolio:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  right: 0;
+  height: 21px;
+  background: url("../img/general/wave-bottom-portfolio.png") 0 0 no-repeat;
+  z-index: 1;
 }
 .portfolio-item__wrap {
   width: 100%;
   max-width: 975px;
   margin: 0 auto;
+}
+.portfolio-item__line {
+  display: -ms-flexbox;
+  display: flex;
+}
+.portfolio-item__center {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -3199,6 +3225,12 @@ header .container {
 }
 .portfolio-item.portfolio-item--width {
   width: 390px;
+}
+.portfolio-item.portfolio-item--height {
+  position: absolute;
+  right: 1px;
+  top: 0;
+  height: 460px;
 }
 .portfolio-item:hover .portfolio-item__descr {
   opacity: 1;
@@ -3236,6 +3268,96 @@ header .container {
   text-align: right;
   opacity: 0;
   transition: all linear 0.3s;
+}
+.portfolio-instagram {
+  text-align: center;
+  font-size: 28px;
+  color: #007558;
+  margin-top: 20px;
+}
+.price {
+  background: url("../img/general/price-bg.jpg") 0 0 no-repeat;
+}
+.price-item__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.price-item {
+  width: 30%;
+  padding: 20px 20px 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: #007558;
+  line-height: 1.2;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.price-item--level1 {
+  background: url("../img/general/level/level1.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.price-item--level2 {
+  background: url("../img/general/level/level2.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.price-item--level3 {
+  background: url("../img/general/level/level3.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.price__title {
+  display: block;
+  font-size: 24px;
+  font-family: "PTSansBold", Arial, sans-serif;
+  text-transform: uppercase;
+}
+.price__title:after {
+  content: '';
+  display: block;
+  width: 260px;
+  height: 1px;
+  background-color: #007558;
+  margin: 20px auto;
+}
+.price-descr {
+  margin-bottom: 10px;
+}
+.price-list {
+  margin-bottom: 20px;
+}
+.price-list li {
+  margin-bottom: 5px;
+}
+.price-number {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  height: 60px;
+  line-height: 60px;
+  background: url("../img/general/price-bg.png") 0 0 no-repeat;
+  font-size: 42px;
+  color: #fff;
+  font-family: "PTSansBold", Arial, sans-serif;
+}
+.price-order {
+  text-align: center;
+  color: #fff;
+}
+.price-order p {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.price-order p a {
+  font-family: "PTSansBold", Arial, sans-serif;
+  color: #fff;
 }
 .services {
   background: url("../img/general/services-bg.jpg") 0 0 no-repeat;

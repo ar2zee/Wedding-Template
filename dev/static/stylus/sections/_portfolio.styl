@@ -1,6 +1,6 @@
 .portfolio
 	background  url('../img/general/portfolio-bg.jpg') 0 0 no-repeat
-	// height 1160px
+	height 1160px
 	
 	&:before
 		content ''
@@ -11,24 +11,32 @@
 		right 0
 		height 21px
 		background url("../img/general/wave-top-portfolio.png") 0 0 no-repeat
+		z-index 1
 		
-	// &:after
-	// 	content ''
-	// 	display block
-	// 	position absolute
-	// 	bottom -19px
-	// 	left 0
-	// 	right 0
-	// 	height 21px
-	// 	background url("../img/general/wave-bottom-portfolio.png") 0 0 no-repeat
-
+	&:after
+		content ''
+		display block
+		position absolute
+		bottom -19px
+		left 0
+		right 0
+		height 21px
+		background url("../img/general/wave-bottom-portfolio.png") 0 0 no-repeat
+		z-index 1
 
 .portfolio-item__wrap
 	width 100%
 	max-width 975px
 	margin 0 auto
+
+.portfolio-item__line
+	display flex
+
+.portfolio-item__center
+	position relative
 	display flex
 	flex-wrap wrap
+	
 
 .portfolio-item
 		position relative
@@ -40,6 +48,12 @@
 		&.portfolio-item--width
 			width 390px
 			
+		&.portfolio-item--height
+			position absolute
+			right 1px
+			top 0
+			height 460px
+
 		&:hover
 			.portfolio-item__descr
 				opacity 1
@@ -78,9 +92,11 @@
 	opacity 0
 	transition all linear .3s
 
-
-
-
+.portfolio-instagram
+	text-align center
+	font-size 28px
+	color mainColor
+	margin-top 20px
 
 
 
